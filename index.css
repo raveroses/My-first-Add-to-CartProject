@@ -7,6 +7,7 @@
 body,html{
     height: 100%;
     padding: 25px;
+    background-color: hsl(13, 31%, 94%);
 }
 
 .writtencontent{
@@ -17,9 +18,7 @@ body,html{
     font-weight: 700;
 }
 
-.menuContent{
-    position:relative;
-}
+
 
 .menuImage{
     width:200px;
@@ -29,14 +28,14 @@ body,html{
 }
 
 .cart{
-border-radius: 25px;
-padding: 9px 24px;
+border-radius: 20px;
+padding: 7px 20px;
 font-size: 15px;
 font-weight: 600;
 border-color:hsl(14, 65%, 9%);
 position: absolute;
-top:210px;
-left:44px
+top:170px;
+left:25px
 }
 
 .btnImg{
@@ -46,14 +45,218 @@ left:44px
 
 .quantityBtn{
     background-color: red;
+    border-radius: 20px;
+    display:flex;
+    padding:11px 27px;
+    align-items: center;
+    font-weight: 600;
+border-color:hsl(14, 65%, 9%);
+ position: absolute;
+top:170px;
+left:29px;
+gap:15px; 
+}
+
+.hiddenclass{
+    display:none;
 }
 
 .decrement{
-  
-}
-.decrement img{
-    background-color: rgb(188, 133, 133);
+    border:1px solid white;
     border-radius: 50%;
-    border: white;
-    color: blue;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 6px;
+    color:white;
+    background-color:transparent;
+}
+
+.increment{
+    border:1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 6px;
+    color:white;
+    background-color:transparent;
+}
+
+
+.message{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+.increment:hover, .decrement:hover{
+    background-color: white;
+    color:red;
+}
+
+
+.menuContent p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.menuContent h4{
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.menuContent h5{
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.menuContainerGrid {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto; 
+    width: 60%
+}
+
+.menuContent{
+    position:relative;
+    padding-bottom: 30px;
+}
+
+.motherFlex{
+    display: flex;
+    width:100%;
+}
+.secondContentFlex{
+    width:30%;
+}
+.realContent{
+    background-color: hsl(20, 50%, 98%);
+    width:450px;
+    /* height:300px; */
+}
+
+.NumberCart h3{
+    color: hsl(14, 86%, 42%);
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.CartImage{
+    padding-left:160px;
+    padding-top: 20px;
+}
+
+.CartImage img{
+    width:170px;
+}
+.cartItemEmpty p{
+    padding-top:15px;
+    padding-left: 120px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lastBorder{
+    margin:10px 85px;
+    background-color: lightblue;
+    width:60%;
+    padding:10px 15px;
+    padding-bottom: 15px;
+}
+
+.lastBorder p{
+    font-size: 14px;
+}
+.lastBorder span{
+    font-weight: 600;
+}
+
+
+.hiddenDiv{
+    display: none;
+}
+
+.flexList{
+    /* display:flex; */
+    justify-content: space-between;
+}
+
+.motherList{
+    margin:0;
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+.ItemName h3{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+
+.cancelItem button{
+    border-radius: 50%;
+    color:red;
+    border-color: red;
+    font-size: 11px;
+    text-align: center;
+    padding:2px 5px;
+    cursor: pointer;
+}
+
+
+.cancelItem button:hover{
+    color:black;
+}
+
+.itemList{
+    padding: 25px 15px;
+    border-bottom:1px solid red;
+}
+
+.color{
+    color:red;
+    font-size: 15px;
+    font-weight: 400;
+}
+.firstSpan{
+    color:lightgray;
+}
+.secondSpan{
+    color:gray;
+}
+
+.calculationPlace{
+    display: flex;
+    justify-content: space-between;
+    padding:25px 15px;
+}
+
+.totalWritten p{
+    font-size: 15px;
+}
+
+.total h3{
+font-size:20px;
+font-weight: 600;
+}
+.lastButton{
+    margin-left: 85px;
+    padding-bottom: 20px;
+}
+.lastButton button{
+    padding:10px 89px;
+    background-color:hsl(14, 86%, 42%);
+    color:white;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
 }
