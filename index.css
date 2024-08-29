@@ -27,6 +27,10 @@ body,html{
     object-position: center;
 }
 
+.menuImage:hover{
+    border: 3px solid red;
+}
+
 .cart{
 border-radius: 20px;
 padding: 7px 20px;
@@ -98,18 +102,18 @@ margin-left: 10px;
 }
 
 
-.menuContent p{
+.menuContent .contentWriting p{
     color: gray;
     font-size: 12px;
     margin-top: 30px;
 }
 
-.menuContent h4{
+.menuContent .contentWritingh4{
     color: gray;
     font-size: 15px;
     margin-top: 5px;
 }
-.menuContent h5{
+.menuContent .contentWriting h5{
     color: gray;
     font-size: 15px;
     margin-top: 5px;
@@ -181,9 +185,12 @@ margin-left: 10px;
 .hiddenDiv{
     display: none;
 }
+.display{
+    display: none;
+}
 
 .flexList{
-    /* display:flex; */
+    display:flex;
     justify-content: space-between;
 }
 
@@ -195,7 +202,7 @@ margin-left: 10px;
 }
 
 
-.ItemName h3{
+.hthree{
     font-size: 15px;
     padding-bottom: 10px;
 }
@@ -220,6 +227,9 @@ margin-left: 10px;
     padding: 25px 15px;
     border-bottom:1px solid red;
 }
+/* .hide{
+    display: none;
+} */
 
 .color{
     color:red;
@@ -227,10 +237,10 @@ margin-left: 10px;
     font-weight: 400;
 }
 .firstSpan{
-    color:lightgray;
+    color:hsl(14, 25%, 72%);
 }
 .secondSpan{
-    color:gray;
+    color:hsl(7, 20%, 60%);
 }
 
 .calculationPlace{
@@ -259,4 +269,82 @@ font-weight: 600;
     font-size: 13px;
     font-weight: 500;
     border: none;
+}
+
+.hiddenclasses{
+    display: block;
+}
+
+.modal{
+    width:500px;
+    background-color: hsl(20, 50%, 98%);
+    position:absolute;
+    top:120px;
+    left:410px;
+    padding:20px 18px;
+}
+
+
+.modal h2{
+    font-size: 20px;
+}
+
+.paragragh{
+    padding-bottom: 10px;
+}
+.paragragh p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.itemLists{
+    background-color: hsl(13, 31%, 94%);
+    padding:14px 15px; 
+}
+
+.motherLists{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.orderImage img{
+    width:60px;
+    border-radius: 5px;
+}
+
+.orderList{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-bottom:15px ;
+}
+
+.classOrderFlex{
+    padding-left: 10px;
+    margin-right: 210px;
+}
+
+.orderName h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.realPrice p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.newOrder{
+background-color: hsl(14, 86%, 42%);
+border-radius: 15px;
+padding:8px 25px;
+}
+
+.newOrder p{
+    color: white;
+    text-align: center;
 }
